@@ -64,10 +64,16 @@ class Projects extends Component {
                 description: `This is a squeeze page that I created for a wholesaling real estate company. I created it with vanilla Javascript and I also 
                 used Materialize for the components. The contact form uses Formspree on the backend.`
             }
-        ]  
+        ],
+        active_page: null  
     }
 
     componentDidMount() {
+        const page = window.next.router.pathname;
+        this.setState({
+            active_page: page
+        });
+
         //Displays the project info either under the image or toggled behind depending on screen size
         const images = document.querySelectorAll("img");
         const articles = document.querySelectorAll("article");
@@ -90,12 +96,11 @@ class Projects extends Component {
 	render() {   
         const personalProjects = this.state.personal_projects;
         const professionalProjects = this.state.professional_projects;
-        const page = window.next.router.pathname;
 
         return (
             <div className="container">
                 <div className="fade-container"></div>
-                {page === "/professional" ?
+                {this.state.active_page === "/professional" ?
                     professionalProjects.map((item, index) =>  
                         <div className="project-container" key={index}>
                             <picture>

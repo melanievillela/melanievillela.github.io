@@ -6,12 +6,12 @@ const Contact = () => (
         <p>
             You can fill out the form below or you can check out my <a href="https://www.linkedin.com/in/melanie-villela-62381574/" target="_blank">Linkedin</a> or <a href="https://github.com/melanievillela/" target="_blank">Github</a>.
         </p>
-        <form action="">
+        <form action="https://formspree.io/meqorenp" method="POST">
             <label htmlFor="fname">First Name</label>
-            <input type="text" id="fname" name="firstname" placeholder="First Name"></input>
+            <input type="text" id="fname" name="first_name" placeholder="First Name"></input>
 
             <label htmlFor="lname">Last Name</label>
-            <input type="text" id="lname" name="lastname" placeholder="Last Name"></input>
+            <input type="text" id="lname" name="last_name" placeholder="Last Name"></input>
 
             <label htmlFor="email">Email</label>
             <input type="text" placeholder="Enter Email" name="email" required></input> 
