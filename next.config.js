@@ -11,7 +11,7 @@ module.exports = {
       "/professional": { page: "/professional" },
     }
   },
-  assetPrefix: !debug ? '/' : '',
+  assetPrefix: !debug ? '/melanievillela.github.io' : '',
   webpack: (config, { dev }) => {
     config.module.rules = config.module.rules.map(rule => {
       if(rule.loader === 'babel-loader') {
