@@ -1,0 +1,28 @@
+body {
+    margin: 0 auto;
+    font-family: 'Lato', sans-serif;
+    height: 100vh;
+    width: 100vw;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.25),
+        rgba(0, 0, 0, 0.25)
+      ), url("../images/wip.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    font-size: 2.5em;
+}
