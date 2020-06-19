@@ -4,12 +4,113 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Melanie Villela Resume</title>    
+    <title>Melanie Villela Resume</title>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Pacifico&family=Quicksand&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>UPDATING MY PORTFOLIO AT THE MOMENT</h1>
+    <h1 class="name">Melanie Villela</h1>
+    <div class="menu">
+        <a href="https://github.com/melanievillela" target="_blank" title="Github"><img src="./images/github.png" class="icons"></a>
+        <a href="resume.pdf" target="_blank" title="Resume"><img src="./images/cv.png" class="icons"></a>
+        <a href="#contact" title="Contact"><img src="./images/email.png" class="icons"></a>
     </div>
+    <div class="container flex col intro">
+        <h2 class="skills"></h2>
+    </div>
+    <div class="flex portfolio">
+        <div class="projects">
+            <div class="project-info">
+                <div class="flex">
+                    <h3>Houston Art Crawl</h3>
+                    <div class="link"><a href="https://houston-art-crawl.herokuapp.com" target="_blank">LIVE</a></div>
+                    <div class="link"><a href="https://github.com/melanievillela/art-crawl" target="_blank">GITHUB</a></div>
+                </div>
+                <div class="flex">
+                    <ul>
+                        <li>Bootstrap</li>
+                        <li>React</li>
+                        <li>Google Maps</li>
+                        <li>Firebase</li>
+                        <li>Heroku</li>
+                    </ul>
+                </div>
+            </div>
+            <img src="./images/Art-Crawl.png">
+        </div>
+        <div class="projects">
+            <div class="project-info">
+                <div class="flex">
+                    <h3>The Adventures of Little Tikka</h3>
+                    <div class="link"><a href="https://melanievillela.github.io/Little-Tikka" target="_blank">LIVE</a></div>
+                    <div class="link"><a href="https://github.com/melanievillela/Little-Tikka" target="_blank">GITHUB</a></div>
+                </div>
+                <div class="flex"> 
+                    <ul>
+                        <li>Javascript</li>
+                        <li>Parallax</li>
+                        <li>Illustrator</li>
+                    </ul>
+                </div>
+            </div>
+            <img src="./images/Little-Tikka.png">
+        </div>
+        <div class="projects">
+            <div class="project-info">
+                <div class="flex">
+                    <h3>Dimas Landscaping</h3>
+                    <div><a href="https://dimaslandscaping.com" target="_blank">LIVE</a></div>
+                </div>
+                <div class="flex">
+                    <ul>
+                        <li>Javascript</li>
+                        <li>Formspree</li>
+                        <li>Firebase</li>
+                    </ul>
+                </div>
+            </div>
+            <img src="./images/Dimas-Landscaping.png">
+        </div>
+    </div>
+    <div class="container flex col about">
+        <h2 class="about glow">ABOUT ME</h2>
+        <p>
+            Hello World! Just kidding. I'm about as tired seeing that phrase as I am writing it. Seriously though welcome to my online portfolio. 
+            My name is Melanie Villela and I'm from Houston, Texas which is where I currently live. I'm constantly trying to improve myself and love learning 
+            new technologies. One of my favorite technologies to use is Javascript and I am really excited for the future of cloud development.
+        </p>
+        <p>
+            I originally attended the University of Houston for Engineering. I was not sure whether I wanted to pursue Mechanical or Petroleum at the 
+            time. Due to family issues I was unable to complete my degree. I have always placed an emphasis on continuing my education whether it be with 
+            classes at a university of online courses. Two of my favorite developers that I follow and have taken online courses from are Wes Bos and Brad Traversy.
+            I have also taken two courses on Udacity for Front End Web Developer and AWS Cloud Developer. My goal is to eventually become a full stack developer so I 
+            have started learning more about how the backend works using Node and Express. 
+
+        </p>
+        <p>
+            I was currently laid off from my job due to Covid-19 so I am currently looking for a full time job in web development. I love working with people on 
+            projects and I'm not afraid of a challenge. The projects that I have worked on have been for a variety of clients. I have done everything from simple landing 
+            pages to building custom web scrapers as well as some pet projects of my own.
+        </p>
+    </div>
+    <div class="container flex col" id="contact">
+        <h2 class="about glow">CONTACT ME</h2>
+        <form action="https://formspree.io/xlejobgo" method="POST" class="flex col">
+            <label htmlFor="fname">First Name</label>
+            <input type="text" id="fname" name="first_name" placeholder="First Name"></input>
+
+            <label htmlFor="lname">Last Name</label>
+            <input type="text" id="lname" name="last_name" placeholder="Last Name"></input>
+
+            <label htmlFor="email">Email</label>
+            <input type="text" placeholder="Enter Email" name="email" required></input> 
+
+            <label htmlFor="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Talk to me!"></textarea>
+
+            <input type="submit" value="Submit"></input>
+        </form>
+    </div>
+    <script src="./js/script.js"></script>
 </body>
 </html>

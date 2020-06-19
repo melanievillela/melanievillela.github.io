@@ -1,29 +1,235 @@
+a {
+    margin: 15px;
+    text-decoration: none;
+    font-family: 'Quicksand', sans-serif;
+    color: #FF4242;
+    font-size: 1.35em;
+}
+
+.menu a:hover {
+    border-bottom: #FF4242 solid 2px;
+}
+
+.about {
+    justify-content: space-evenly !important;
+}
+
+.about p {
+    padding: 0 25px;
+    text-align: left;
+}
+
 body {
     margin: 0 auto;
-    font-family: 'Lato', sans-serif;
-    height: 100vh;
-    width: 100vw;
+    max-width: 100vw;
+    font-family: 'Comfortaa', cursive;   
+    text-align: center; 
+}
+
+.bounce {
+    animation-name: bounce;
+    animation-timing-function: cubic-bezier(0.25, 0.75, 0.50, 1);
+}
+
+.bounce-final {
+    transform: translateY(0px) !important; 
+}
+
+.col {
+    flex-direction: column;
+}
+
+#contact {
+    justify-content: space-evenly !important;
 }
 
 .container {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(
-        rgba(0, 0, 0, 0.25),
-        rgba(0, 0, 0, 0.25)
-      ), url("../images/wip.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    width: 100vw;
+    max-width: 100%;
 }
 
-h1 {
-    color: white;
-    text-align: center;
-    text-shadow: 2px 2px 2px black;
-    font-size: 2.5em;
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+form {
+    padding: 25px;
+}
+
+h3 {
+    font-size: 2.5em;
+    margin: 15px;
+}
+
+h2 {
+    color: #ff4242
+}
+
+.icons {
+    max-width: 32px;
+    position: relative;
+    animation-duration: 1s;
+    transform: translateY(-250px); 
+}
+
+input, textarea {
+    margin-bottom: 25px;
+    width: 75vw;
+}
+
+.intro {
+    height: 100vh;
+}
+
+li {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.5em;
+    padding: 15px;
+    color: #757575;
+}
+
+.link {
+    padding: 15px;
+}
+
+.menu {
+    display: inline-block;
+    margin: 25px;
+    position: absolute;
+    right: 0;
+}
+
+.name {
+    font-family: 'Pacifico', cursive;
+    color: #333333;
+    display: inline-block;
+    margin: 25px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+p {
+    line-height: 1.5;
+}
+
+.portfolio {
+    flex-wrap: wrap;
+}
+
+.projects {
+    position: relative;
+}
+
+.projects img {
+    height: 100%;
+    width: 100%;
+}
+
+.project-info {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: none;
+    background-color: #F2BC79;
+    color: #333333;
+}
+
+.project-info > div:first-child {
+    flex-direction: column;
+    width: 60%;
+}
+
+.project-info p {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.project-info-display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills:after {
+    content:"";
+    animation: spin 12s ease-in-out infinite;
+}
+
+.skills {
+    font-size: 5em;
+    color: #F28157;
+}
+
+ul {
+    padding-left: 20px;
+    list-style: none;
+    text-align: right;
+}
+
+@keyframes bounce {
+    0%   { transform: translateY(-250px); }
+    50%  { transform: translateY(50px); }
+    100% { transform: translateY(0px); }
+}
+
+@keyframes spin {
+    0%   { content:"JAVASCRIPT";}
+    10%  { content:"PYTHON";}
+    20%  { content:"ILLUSTRATOR";}
+    30%  { content:"FLASK";}
+    40%  { content:"NODE";}
+    50%  { content:"PHOTOSHOP";}
+    60%  { content:"REACT";}
+    70%  { content:"JQUERY";}
+    80%  { content:"AMAZON AWS";}
+    90%  { content:"EXPRESS";}
+    100% { content:"JAVASCRIPT";}
+}
+
+@media only screen and (max-width: 650px) {
+    a {
+        font-size: 1em;
+    }
+
+    h3 {
+        font-size: 1.75em;
+    }
+
+    .link, li {
+        padding: 5px;
+    }
+
+    li {
+        font-size: 1em;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .skills {
+        font-size: 3em;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    a {
+        font-size: .75em;
+    }
+
+    h3 {
+        font-size: 1em;
+    }
+
+    li {
+        font-size: .75em;
+    }
+
+    .skills {
+        font-size: 2em;
+    }
+}
+
