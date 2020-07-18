@@ -2,12 +2,12 @@ a {
     margin: 15px;
     text-decoration: none;
     font-family: 'Quicksand', sans-serif;
-    color: #FF4242;
+    color: #757575;
     font-size: 1.35em;
 }
 
 .menu a:hover {
-    border-bottom: #FF4242 solid 2px;
+    border-bottom: #FF005E solid 2px;
 }
 
 .about {
@@ -41,6 +41,7 @@ body {
 
 #contact {
     justify-content: space-evenly !important;
+    background-color: #EFFF0D;
 }
 
 .container {
@@ -64,7 +65,7 @@ h3 {
 }
 
 h2 {
-    color: #ff4242
+    color: #FF005E;
 }
 
 .icons {
@@ -79,15 +80,24 @@ input, textarea {
     width: 75vw;
 }
 
+input[type=submit] {
+    background-color: #152DA2;
+    height: 35px;
+    border: none;
+    color: white;
+    font-weight: bold;
+}
+
 .intro {
     height: 100vh;
+    background-color: #EFFF0D;
 }
 
 li {
     font-family: 'Quicksand', sans-serif;
     font-size: 1.5em;
     padding: 15px;
-    color: #757575;
+    color: #FF005E;
 }
 
 .link {
@@ -103,7 +113,7 @@ li {
 
 .name {
     font-family: 'Pacifico', cursive;
-    color: #333333;
+    color: #152DA2;
     display: inline-block;
     margin: 25px;
     position: absolute;
@@ -133,8 +143,8 @@ p {
     width: 100%;
     height: 100%;
     display: none;
-    background-color: #F2BC79;
-    color: #333333;
+    background-color: white;
+    color: #152DA2;
 }
 
 .project-info > div:first-child {
@@ -159,7 +169,7 @@ p {
 
 .skills {
     font-size: 5em;
-    color: #F28157;
+    color: #FF005E;
 }
 
 ul {
