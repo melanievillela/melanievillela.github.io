@@ -81,7 +81,7 @@ input, textarea {
 }
 
 input[type=submit] {
-    background-color: #152DA2;
+    background-color: #1D3FE2;
     height: 35px;
     border: none;
     color: white;
@@ -113,7 +113,7 @@ li {
 
 .name {
     font-family: 'Pacifico', cursive;
-    color: #152DA2;
+    color: #1D3FE2;
     display: inline-block;
     margin: 25px;
     position: absolute;
@@ -144,7 +144,7 @@ p {
     height: 100%;
     display: none;
     background-color: white;
-    color: #152DA2;
+    color: #1D3FE2;
 }
 
 .project-info > div:first-child {
@@ -164,7 +164,7 @@ p {
 
 .skills:after {
     content:"";
-    animation: spin 12s ease-in-out infinite;
+    -webkit-animation: spin 12s ease-in-out infinite;
 }
 
 .skills {
@@ -178,13 +178,13 @@ ul {
     text-align: right;
 }
 
-@keyframes bounce {
+@-webkit-keyframes bounce {
     0%   { transform: translateY(-250px); }
     50%  { transform: translateY(50px); }
     100% { transform: translateY(0px); }
 }
 
-@keyframes spin {
+@-webkit-keyframes spin {
     0%   { content:"JAVASCRIPT";}
     10%  { content:"PYTHON";}
     20%  { content:"ILLUSTRATOR";}
