@@ -11,7 +11,9 @@ a {
 }
 
 .about {
-    justify-content: space-evenly !important;
+    -webkit-box-pack: space-evenly !important;
+        -ms-flex-pack: space-evenly !important;
+            justify-content: space-evenly !important;
 }
 
 .about p {
@@ -27,21 +29,30 @@ body {
 }
 
 .bounce {
-    animation-name: bounce;
-    animation-timing-function: cubic-bezier(0.25, 0.75, 0.50, 1);
+    -webkit-animation-name: bounce;
+            animation-name: bounce;
+    -webkit-animation-timing-function: cubic-bezier(0.25, 0.75, 0.50, 1);
+            animation-timing-function: cubic-bezier(0.25, 0.75, 0.50, 1);
 }
 
 .bounce-final {
-    transform: translateY(0px) !important; 
+    -webkit-transform: translateY(0px) !important;
+        -ms-transform: translateY(0px) !important;
+            transform: translateY(0px) !important; 
 }
 
 .col {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
 #contact {
-    justify-content: space-evenly !important;
-    background-color: #EFFF0D;
+    -webkit-box-pack: space-evenly !important;
+        -ms-flex-pack: space-evenly !important;
+            justify-content: space-evenly !important;
+    background-color: #EFFF0C;
 }
 
 .container {
@@ -50,9 +61,15 @@ body {
 }
 
 .flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 form {
@@ -71,8 +88,11 @@ h2 {
 .icons {
     max-width: 32px;
     position: relative;
-    animation-duration: 1s;
-    transform: translateY(-250px); 
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-transform: translateY(-250px);
+        -ms-transform: translateY(-250px);
+            transform: translateY(-250px); 
 }
 
 input, textarea {
@@ -90,7 +110,7 @@ input[type=submit] {
 
 .intro {
     height: 100vh;
-    background-color: #EFFF0D;
+    background-color: #EFFF0C;
 }
 
 li {
@@ -122,11 +142,12 @@ li {
 }
 
 p {
-    line-height: 1.5;
+    line-height: 1.75;
 }
 
 .portfolio {
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }
 
 .projects {
@@ -148,7 +169,10 @@ p {
 }
 
 .project-info > div:first-child {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     width: 60%;
 }
 
@@ -157,14 +181,21 @@ p {
 }
 
 .project-info-display {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .skills:after {
     content:"";
     -webkit-animation: spin 12s ease-in-out infinite;
+            animation: spin 12s ease-in-out infinite;
 }
 
 .skills {
@@ -179,12 +210,32 @@ ul {
 }
 
 @-webkit-keyframes bounce {
-    0%   { transform: translateY(-250px); }
-    50%  { transform: translateY(50px); }
-    100% { transform: translateY(0px); }
+    0%   { -webkit-transform: translateY(-250px); transform: translateY(-250px); }
+    50%  { -webkit-transform: translateY(50px); transform: translateY(50px); }
+    100% { -webkit-transform: translateY(0px); transform: translateY(0px); }
+}
+
+@keyframes bounce {
+    0%   { -webkit-transform: translateY(-250px); transform: translateY(-250px); }
+    50%  { -webkit-transform: translateY(50px); transform: translateY(50px); }
+    100% { -webkit-transform: translateY(0px); transform: translateY(0px); }
 }
 
 @-webkit-keyframes spin {
+    0%   { content:"JAVASCRIPT";}
+    10%  { content:"PYTHON";}
+    20%  { content:"ILLUSTRATOR";}
+    30%  { content:"FLASK";}
+    40%  { content:"NODE";}
+    50%  { content:"PHOTOSHOP";}
+    60%  { content:"REACT";}
+    70%  { content:"JQUERY";}
+    80%  { content:"AMAZON AWS";}
+    90%  { content:"EXPRESS";}
+    100% { content:"JAVASCRIPT";}
+}
+
+@keyframes spin {
     0%   { content:"JAVASCRIPT";}
     10%  { content:"PYTHON";}
     20%  { content:"ILLUSTRATOR";}
@@ -216,8 +267,13 @@ ul {
     }
 
     .menu {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
 
     .skills {
