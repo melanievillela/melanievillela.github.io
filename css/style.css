@@ -194,8 +194,10 @@ p {
 
 .skills:after {
     content:"";
-    -webkit-animation: spin 12s ease-in-out infinite;
-            animation: spin 12s ease-in-out infinite;
+    -webkit-animation-name: spin;
+    -webkit-animation-duration:12s;
+    -webkit-animation-timing-function: ease-in-out infinite;
+    -webkit-animation-iteration-count:infinite;
 }
 
 .skills {
