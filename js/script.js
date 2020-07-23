@@ -1,3 +1,7 @@
+//Check if Apple
+var isSafari = window.safari !== undefined;
+if (isSafari) alert("PISS OFF DESTINY")
+
 //Bounce in effects
 const icons = document.getElementsByClassName("icons");
 
