@@ -11,6 +11,7 @@ a {
 }
 
 .about {
+    margin: 25px 0;
     -webkit-box-pack: space-evenly !important;
         -ms-flex-pack: space-evenly !important;
             justify-content: space-evenly !important;
@@ -152,6 +153,10 @@ p {
 
 .projects {
     position: relative;
+    display: flex;
+    height: auto;
+    width: 80%;
+    margin-top: 25px;
 }
 
 .projects img {
@@ -192,14 +197,6 @@ p {
             align-items: center;
 }
 
-.skills:after {
-    content:"";
-    -webkit-animation-name: spin;
-    -webkit-animation-duration:12s;
-    -webkit-animation-timing-function: ease-in-out infinite;
-    -webkit-animation-iteration-count:infinite;
-}
-
 .skills {
     font-size: 5em;
     color: #FF005E;
@@ -209,46 +206,6 @@ ul {
     padding-left: 20px;
     list-style: none;
     text-align: right;
-}
-
-@-webkit-keyframes bounce {
-    0%   { -webkit-transform: translateY(-250px); transform: translateY(-250px); }
-    50%  { -webkit-transform: translateY(50px); transform: translateY(50px); }
-    100% { -webkit-transform: translateY(0px); transform: translateY(0px); }
-}
-
-@keyframes bounce {
-    0%   { -webkit-transform: translateY(-250px); transform: translateY(-250px); }
-    50%  { -webkit-transform: translateY(50px); transform: translateY(50px); }
-    100% { -webkit-transform: translateY(0px); transform: translateY(0px); }
-}
-
-@-webkit-keyframes spin {
-    0%   { content:"JAVASCRIPT";}
-    10%  { content:"PYTHON";}
-    20%  { content:"ILLUSTRATOR";}
-    30%  { content:"FLASK";}
-    40%  { content:"NODE";}
-    50%  { content:"PHOTOSHOP";}
-    60%  { content:"REACT";}
-    70%  { content:"JQUERY";}
-    80%  { content:"AMAZON AWS";}
-    90%  { content:"EXPRESS";}
-    100% { content:"JAVASCRIPT";}
-}
-
-@keyframes spin {
-    0%   { content:"JAVASCRIPT";}
-    10%  { content:"PYTHON";}
-    20%  { content:"ILLUSTRATOR";}
-    30%  { content:"FLASK";}
-    40%  { content:"NODE";}
-    50%  { content:"PHOTOSHOP";}
-    60%  { content:"REACT";}
-    70%  { content:"JQUERY";}
-    80%  { content:"AMAZON AWS";}
-    90%  { content:"EXPRESS";}
-    100% { content:"JAVASCRIPT";}
 }
 
 @media only screen and (max-width: 650px) {
