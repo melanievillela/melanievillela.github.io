@@ -38,12 +38,9 @@ function isScrolledIntoView(el) {
 
 //Apply animations
 function applyAniations() {
-    let screenSize = screen.width;
     projects.forEach(project => {
-        if(isScrolledIntoView(project) && screenSize >= 450) {
+        if(isScrolledIntoView(project)) {
             project.classList.add("animate__animated", "animate__slideInRight");
-        } else if (isScrolledIntoView(project) && screenSize < 450) {
-            project.classList.add("animate__animated", "animate__heartBeat");
         }
     });
 }

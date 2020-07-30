@@ -27,6 +27,7 @@ body {
     max-width: 100vw;
     font-family: 'Comfortaa', cursive;   
     text-align: center; 
+    overflow-x: hidden; 
 }
 
 .bounce {
@@ -155,8 +156,7 @@ p {
     position: relative;
     display: flex;
     height: auto;
-    width: 80%;
-    margin-top: 25px;
+    width: 100%;
 }
 
 .projects img {
@@ -251,11 +251,6 @@ ul {
 
     li {
         font-size: .75em;
-    }
-
-    .projects {
-        width: 100%;
-        margin-top: 0;
     }
 
     .skills {
