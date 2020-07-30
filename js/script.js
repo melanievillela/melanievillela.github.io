@@ -36,11 +36,14 @@ function isScrolledIntoView(el) {
     return isVisible;
 }
 
-//Check visibility
-function checkVisibility() {
+//Apply animations
+function applyAniations() {
+    let screenSize = screen.width;
     projects.forEach(project => {
-        if(isScrolledIntoView(project)) {
+        if(isScrolledIntoView(project) && screenSize >= 450) {
             project.classList.add("animate__animated", "animate__slideInRight");
+        } else if (isScrolledIntoView(project) && screenSize < 450) {
+            project.classList.add("animate__animated", "animate__heartBeat");
         }
     });
 }
@@ -59,6 +62,6 @@ function toggleInfo() {
 timedIcons();
 timedText();
 toggleInfo();
-window.addEventListener('scroll', checkVisibility);
+window.addEventListener('scroll', applyAniations);
 
 console.log("Icons made by Freepik at https://www.flaticon.com/authors/freepik")
