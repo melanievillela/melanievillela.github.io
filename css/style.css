@@ -240,7 +240,7 @@ ul {
     }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 425px) {
     a {
         font-size: .75em;
     }
@@ -251,6 +251,11 @@ ul {
 
     li {
         font-size: .75em;
+    }
+
+    .projects {
+        width: 100%;
+        margin-top: 0;
     }
 
     .skills {
