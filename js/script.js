@@ -40,7 +40,7 @@ function isScrolledIntoView(el) {
 function applyAniations() {
     projects.forEach(project => {
         if(isScrolledIntoView(project)) {
-            project.classList.add("animate__animated", "animate__slideInRight");
+            setTimeout(function(){ project.classList.add("animate__animated", "animate__flip") }, 800);
         }
     });
 }
