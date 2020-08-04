@@ -39,8 +39,10 @@ function isScrolledIntoView(el) {
 //Apply animations
 function applyAniations() {
     projects.forEach(project => {
-        if(isScrolledIntoView(project)) {
+        if(isScrolledIntoView(project) && screen.width <= 400) {
             setTimeout(function(){ project.classList.add("animate__animated", "animate__flip") }, 800);
+        } else if(isScrolledIntoView(project) && screen.width > 400) {
+            setTimeout(function(){ project.classList.add("animate__animated", "animate__tada") }, 500);
         }
     });
 }
