@@ -2,30 +2,13 @@
 const icons = document.querySelectorAll(".icons");
 
 function timedIcons() {
-    setTimeout(function(){ icons[0].classList.add("animate__animated", "animate__bounceInDown") }, 500);
-    setTimeout(function(){ icons[1].classList.add("animate__animated", "animate__bounceInDown") }, 1000);
-    setTimeout(function(){ icons[2].classList.add("animate__animated", "animate__bounceInDown") }, 1500);
-}
-
-//Loop through skills
-const skills = ["JAVASCRIPT","PYTHON","ILLUSTRATOR","FLASK","NODE","PHOTOSHOP","REACT","AMAZON AWS","EXPRESS","WORDPRESS","JQUERY"];
-const skillsContainer = document.querySelector(".skills");
-
-function timedText() {
-    let i = 0;
-
-    setInterval(function(){
-            skillsContainer.textContent = skills[i];
-            i++;
-            if(i>=skills.length) {
-                i = 0;
-                timedText();
-            }
-    }, 1000);    
+    setTimeout(function(){ icons[0].classList.add("animate__animated", "animate__rubberBand") }, 500);
+    setTimeout(function(){ icons[1].classList.add("animate__animated", "animate__rubberBand") }, 1000);
+    setTimeout(function(){ icons[2].classList.add("animate__animated", "animate__rubberBand") }, 1500);
 }
 
 //Project display effects
-const projects = document.querySelectorAll(".projects");
+const projects = document.querySelectorAll(".project");
 
 //Check visibility
 function isScrolledIntoView(el) {
@@ -39,28 +22,16 @@ function isScrolledIntoView(el) {
 //Apply animations
 function applyAniations() {
     projects.forEach(project => {
-        if(isScrolledIntoView(project) && screen.width <= 400) {
-            setTimeout(function(){ project.classList.add("animate__animated", "animate__flip") }, 800);
-        } else if(isScrolledIntoView(project) && screen.width > 400) {
+        if(isScrolledIntoView(project) && screen.width <= 1200) {
+            setTimeout(function(){ project.classList.add("animate__animated", "animate__flash") }, 800);
+        } else if(isScrolledIntoView(project) && screen.width > 1200) {
             setTimeout(function(){ project.classList.add("animate__animated", "animate__tada") }, 500);
         }
     });
 }
 
-function toggleInfo() {
-    for (let i = 0; i < projects.length; i++) {
-        projects[i].addEventListener("mouseenter", function() {
-            this.firstElementChild.classList.add("project-info-display");
-        });
-        projects[i].addEventListener("mouseleave", function() {
-            this.firstElementChild.classList.remove("project-info-display");
-        });
-    } 
-}
-
 timedIcons();
-timedText();
-toggleInfo();
+//toggleInfo();
 window.addEventListener('scroll', applyAniations);
 
 console.log("Icons made by Freepik at https://www.flaticon.com/authors/freepik")
