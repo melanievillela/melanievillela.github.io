@@ -25,7 +25,7 @@ function applyAniations() {
         if(isScrolledIntoView(project) && screen.width <= 1200) {
             setTimeout(function(){ project.classList.add("animate__animated", "animate__flash") }, 800);
         } else if(isScrolledIntoView(project) && screen.width > 1200) {
-            setTimeout(function(){ project.classList.add("animate__animated", "animate__tada") }, 500);
+            setTimeout(function(){ project.classList.add("animate__animated", "animate__pulse") }, 500);
         }
     });
 }
