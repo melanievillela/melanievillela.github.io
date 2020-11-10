@@ -18,6 +18,10 @@ body {
     overflow-x: hidden;
 }
 
+.fade-in {
+    animation: fadeIn ease 3s;
+}
+
 form {
     display: flex;
     flex-direction: column;
@@ -84,7 +88,6 @@ input[type=submit] {
     align-items: center;
     height: auto;
     width: 80%;
-    border: solid 3px #E2A3C3;
     padding: 30px 15px 15px 15px;
     border-radius: 15px;
     margin: 25px 0;
@@ -108,6 +111,11 @@ input[type=submit] {
 ul {
     list-style-type: none;
     padding-inline-start: 0px;
+}
+
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
 }
 
 @media screen and (min-width: 1200px) {

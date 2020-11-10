@@ -1,11 +1,13 @@
 //Bounce in effects
+/*
 const icons = document.querySelectorAll(".icons");
 
 function timedIcons() {
-    setTimeout(function(){ icons[0].classList.add("animate__animated", "animate__rubberBand") }, 500);
-    setTimeout(function(){ icons[1].classList.add("animate__animated", "animate__rubberBand") }, 1000);
-    setTimeout(function(){ icons[2].classList.add("animate__animated", "animate__rubberBand") }, 1500);
+    setTimeout(function(){ icons[0].classList.toggle("animate__animated", "animate__rubberBand") }, 500);
+    setTimeout(function(){ icons[1].classList.toggle("animate__animated", "animate__rubberBand") }, 1000);
+    setTimeout(function(){ icons[2].classList.toggle("animate__animated", "animate__rubberBand") }, 1500);
 }
+*/
 
 //Project display effects
 const projects = document.querySelectorAll(".project");
@@ -22,6 +24,14 @@ function isScrolledIntoView(el) {
 //Apply animations
 function applyAniations() {
     projects.forEach(project => {
+        if(isScrolledIntoView(project)) {
+            project.classList.add("fade-in")
+        }
+    });
+}
+/*
+function applyAniations() {
+    projects.forEach(project => {
         if(isScrolledIntoView(project) && screen.width <= 1200) {
             setTimeout(function(){ project.classList.add("animate__animated", "animate__flash") }, 800);
         } else if(isScrolledIntoView(project) && screen.width > 1200) {
@@ -29,8 +39,9 @@ function applyAniations() {
         }
     });
 }
+*/
 
-timedIcons();
+//timedIcons();
 //toggleInfo();
 window.addEventListener('scroll', applyAniations);
 
