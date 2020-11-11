@@ -28,7 +28,6 @@ form {
     align-items: center;
 }
 
-
 h1 {
     font-family: 'Pacifico', cursive;
     color: #ff936f;
@@ -87,9 +86,7 @@ input[type=submit] {
     flex-direction: column;
     align-items: center;
     height: auto;
-    width: 80%;
     padding: 30px 15px 15px 15px;
-    border-radius: 15px;
     margin: 25px 0;
 }
 
@@ -99,7 +96,7 @@ input[type=submit] {
 
 .project img {
     height: auto;
-    width: 90%;
+    width: 100%;
 }
 
 .projects {
@@ -159,10 +156,6 @@ ul {
         width: 45%;
     }
 
-    .project img {
-        height: auto;
-    }
-
     .projects {
         flex-direction: row;
         flex-wrap: wrap;
@@ -175,4 +168,3 @@ ul {
     }
 
   }
-
