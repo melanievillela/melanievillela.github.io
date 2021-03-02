@@ -52,6 +52,7 @@ h2 {
 input, textarea {
     margin: 0 0 25px 0;
     width: 75vw;
+    height: 25px;
 }
 
 input[type=submit] {
@@ -79,6 +80,10 @@ input[type=submit] {
     padding: 25px;
     display: flex;
     justify-content: space-evenly;
+}
+
+p {
+    margin: 15px;
 }
 
 .project {
