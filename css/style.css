@@ -5,7 +5,6 @@ a {
 }
 
 .about {
-    padding: 25px;
     line-height: 1.5;
 }
 
@@ -84,6 +83,7 @@ input[type=submit] {
 
 p {
     margin: 15px;
+    text-align: left
 }
 
 .project {
@@ -91,8 +91,7 @@ p {
     flex-direction: column;
     align-items: center;
     height: auto;
-    padding: 30px 15px 15px 15px;
-    margin: 25px 0;
+    padding: 25px 0;
 }
 
 .project-info {
@@ -108,6 +107,10 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.sec {
+    margin: 50px 25px;
 }
 
 ul {
