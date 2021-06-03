@@ -67,7 +67,7 @@ input[type=submit] {
     background-image: url('../images/LOGO.png');
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: center;
+    background-position: top;
 }
 
 .main {
@@ -122,6 +122,13 @@ ul {
     0% {opacity:0;}
     100% {opacity:1;}
 }
+
+@media screen and (min-width: 800px) {
+    .logo {
+        background-position: center;
+    }
+}
+
 
 @media screen and (min-width: 1200px) {
     a {
