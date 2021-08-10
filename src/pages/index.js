@@ -23,6 +23,11 @@ class IndexPage extends React.Component {
             <StaticImage src="../images/carawaykitchenmockup.png" alt="Caraway Kitchen Website Mockup" />
           </Link>        
         </div>
+        <div className="flexCol introcontainertwoStyles">
+          <Link to="/frontend">
+            <StaticImage src="../images/houstonartcrawl.png" alt="Houston Art Crawl Website Mockup" />
+          </Link>        
+        </div>
         <div className="line"></div>
         <div className="flexCol introcontainertwoStyles">
           <Link to="/design">

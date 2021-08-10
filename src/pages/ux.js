@@ -162,7 +162,10 @@ export default UXPage
 
 export const pageQuery = graphql `
 	query {
-		pics: allFile(filter: {relativeDirectory: {eq: "process"}}) {
+		pics: allFile(
+			filter: {relativeDirectory: {eq: "process"}}
+			sort: {order: ASC, fields: name}
+		) {
 			edges {
 				node {
 					name
