@@ -10,28 +10,26 @@ class IndexPage extends React.Component {
     return (
       <Layout>
         <section className="flexCol introcontaineroneStyles">
-          <h2>UX | FRONT END | GRAPHICS | HOUSTON</h2>
+          <h2>FRONT END | UX | GRAPHICS | HOUSTON</h2>
           <p className="italicStyles">The whole is greater than the sum of its parts.</p>
-          <p className="pintroStyles">I am a UX designer with a background in front end development and graphic design. 
-            I am based out of Houston, Texas. I have a very empathetic nature that helps me understand and really
-            connect with people.
+          <p className="pintroStyles">I am a front end developer with a background in UX and graphic design. 
+            I am based out of Houston, Texas. I love traveling and meeting new people.
           </p>
           <p className="pssstStyles">Pssst... This website was designed and coded by me in Gatsby!</p>
         </section>
         <div className="flexCol introcontainertwoStyles">
           <Link to="/ux">
-            <StaticImage src="../images/carawaykitchenmockup.png" alt="Caraway Kitchen Website Mockup" />
+            <StaticImage src="../images/ux.png" alt="ux projects" />
           </Link>        
         </div>
         <div className="flexCol introcontainertwoStyles">
           <Link to="/frontend">
-            <StaticImage src="../images/houstonartcrawl.png" alt="Houston Art Crawl Website Mockup" />
+            <StaticImage src="../images/frontend.png" alt="front end projects" />
           </Link>        
         </div>
-        <div className="line"></div>
         <div className="flexCol introcontainertwoStyles">
           <Link to="/design">
-            <StaticImage src="../images/design/front.png" alt="Design Work" />
+            <StaticImage src="../images/graphics.png" alt="graphic design projects" />
           </Link>        
         </div>
       </Layout>

@@ -21,20 +21,25 @@ class DesignPage extends React.Component {
 					</div>
 					<div className="flexRow">
 						<p className="boldStyles flexRowL">TECH:</p>
-						<p className="pStyles flexRowL">Illustrator</p>
+						<p className="pStyles flexRowL">Illustrator, Photoshop</p>
 					</div>  
 					<div className="flexRow">
 						<p className="boldStyles flexRowL">SUMMARY:</p>
-						<p className="pStyles flexRowL">These are various graphic designs I have done. (Book cover design, postcard design, 
-						birthday invitations)
+						<p className="pStyles flexRowL">These are various graphic designs I have done throughout the years.
 						</p>
 					</div>
 				</section>
 				<section className="marginStyles flexRow ux">
+					<StaticImage src="../images/design/logo.png" alt="Design Work" />
 					<StaticImage src="../images/design/brain.png" alt="Design Work" />
 					<StaticImage src="../images/design/postcard.png" alt="Design Work" />
 					<StaticImage src="../images/design/destiny_invitation.jpg" alt="Design Work" />
 					<StaticImage src="../images/design/joseph_invitation.jpg" alt="Design Work" />
+					<StaticImage src="../images/design/Banner-1.png" alt="Design Work" />
+					<StaticImage src="../images/design/Banner-2.png" alt="Design Work" />
+					<StaticImage src="../images/design/RestorationLogo.png" alt="Design Work" />
+					<StaticImage src="../images/design/Landoscapes.png" alt="Design Work" />
+					<StaticImage src="../images/design/PoochCoutureTag.png" alt="Design Work" />
 				</section>    
 			</Layout>
 		)
