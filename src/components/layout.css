@@ -71,7 +71,7 @@ h1 {
 h2 {
 	font-weight: 600;
 	font-size: 2.25em;
-	color: #8E679D;
+	text-shadow: #00FFF5 2px 1px 1px;
 }
 
 h3 {
@@ -170,7 +170,6 @@ ul {
 
 .ux {
 	flex-wrap: wrap;
-	justify-content: center;
 }
 
 @media only screen and (max-width: 450px) {
@@ -224,8 +223,4 @@ ul {
 	.ux .gatsby-image-wrapper {
 		margin: 25px 0;
 	}
-}
-
- {
-	border: solid black 1px;
 }
